@@ -18,7 +18,7 @@ dotenv.config();
 
 // Express App
 const app = express();
-const port = config.get("PORT") || 5010;
+const port = process.env.PORT || 5010;
 app.use(cors());
 
 app.use(express.json());
